@@ -3,9 +3,13 @@
 }
 
 .hw {
-
+    padding: 70px;
 }
 
 .hwTitle {
-
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    color: #000000;
+    padding: 100px 70px 0;
 }
