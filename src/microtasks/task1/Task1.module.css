@@ -1,0 +1,13 @@
+.table {
+    border-collapse: collapse;
+}
+
+tr, th, td {
+    padding: 10px;
+    border-collapse: collapse;
+    border: 1px solid;
+}
+.task__wrapper{
+    max-width: 70%;
+    margin: 50px auto;
+}
