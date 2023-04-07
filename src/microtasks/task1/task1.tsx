@@ -61,18 +61,40 @@ export const Task1: React.FC<Task1Type> = (props) => {
         setFilterValue(filterValue);
     }
 
-    // let [filteredMoney, setFilteredMoney] = useState(money);
-    // const filterMoney = (value: string) => {
-    //     if (value === 'Rubls') {
-    //         filteredMoney = money.filter(m => m.banknots === value)
-    //         return setFilteredMoney(filteredMoney);
-    //     } else if (value === 'Dollars') {
-    //         filteredMoney = money.filter(m => m.banknots === value)
-    //         return setFilteredMoney(filteredMoney);
-    //     } else {
-    //         return setFilteredMoney(money);
-    //     }
-    // }
+// let [filteredMoney, setFilteredMoney] = useState(money);
+// const filterMoney = (value: string) => {
+//     if (value === 'Rubls') {
+//         filteredMoney = money.filter(m => m.banknots === value)
+//         return setFilteredMoney(filteredMoney);
+//     } else if (value === 'Dollars') {
+//         filteredMoney = money.filter(m => m.banknots === value)
+//         return setFilteredMoney(filteredMoney);
+//     } else {
+//         return setFilteredMoney(money);
+//     }
+// }
+    /*function getDivisorsCnt(n: number) {
+        let res = 0;
+        for (let i = 1; i <= n; i++) if (n % i === 0) res++;
+        return res;
+    }
+
+    getDivisorsCnt(30)
+*/
+    function getGrade(s1: number, s2: number, s3: number) {
+        // Code here
+        let avarageS: number | string = Math.ceil((s1 + s2 + s3) / 3);
+        console.log(avarageS)
+        avarageS= avarageS < 60 ? "F" :
+            avarageS >= 60 && avarageS < 70 ? "D" :
+                avarageS >= 70 && avarageS < 80 ? "C" :
+                    avarageS >= 80 && avarageS < 90 ? "B" :
+                        avarageS >= 90 && avarageS <= 100 ? "A" : avarageS;
+        console.log(avarageS)
+        return avarageS;
+    }
+
+    getGrade(70,70,100)
 
     return (
         <div className={styles.task__wrapper}>
